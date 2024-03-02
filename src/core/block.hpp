@@ -9,7 +9,7 @@
 #include "merkle_tree.hpp"
 using namespace std;
 
-struct BlockHeader {
+struct BlockHeader  {
     uint32_t id;
     uint64_t timestamp; 
     uint32_t difficulty;
