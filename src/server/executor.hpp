@@ -35,7 +35,7 @@ enum ExecutionStatus {
     SUCCESS
 };
 
-string executionStatusAsString(ExecutionStatus s);
+ string executionStatusAsString(ExecutionStatus s);
 
 class Executor {
     public:
