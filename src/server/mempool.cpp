@@ -20,7 +20,7 @@ MemPool::MemPool(HostManager& h, BlockChain& b) : hosts(h), blockchain(b) {
 }
 
 MemPool::~MemPool() {
-    shutdown = true;
+     shutdown = true;
 }
 
 void MemPool::mempool_sync() {
