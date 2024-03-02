@@ -24,7 +24,7 @@ RUN conan install .. --build=missing
 
 WORKDIR /pandanite
 
-RUN cmake .
+RUN cmake.
 
 RUN MAKEFLAGS=-j$(nproc); export MAKEFLAGS; make miner
 RUN MAKEFLAGS=-j$(nproc); export MAKEFLAGS; make keygen
