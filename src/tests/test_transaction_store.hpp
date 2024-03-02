@@ -16,7 +16,7 @@ TEST(test_txdb_stores_transaction) {
     ASSERT_EQUAL(txdb.hasTransaction(t), false);
     
 
-    Transaction t2 = miner.send(other, 333);
+    Transaction t2 = miner.send(other,  333);
     ASSERT_EQUAL(txdb.hasTransaction(t2), false);
     txdb.insertTransaction(t2, 3);
     ASSERT_EQUAL(txdb.hasTransaction(t2), true);
