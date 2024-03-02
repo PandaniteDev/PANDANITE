@@ -12,7 +12,7 @@ TEST(check_transaction_json_serialization) {
     User miner;
     User receiver;
 
-    Transaction t = miner.mine();
+    Transaction t = miner.mine( );
     Transaction t2 = miner.send(receiver, PDN(30.0));
     
     ASSERT_TRUE(t2.signatureValid());
