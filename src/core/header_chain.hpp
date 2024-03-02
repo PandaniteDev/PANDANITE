@@ -30,5 +30,5 @@ class HeaderChain {
         map<uint64_t, SHA256Hash> checkPoints;
         map<uint64_t, SHA256Hash> bannedHashes;
         vector<std::thread> syncThread;
-        friend void chain_sync(HeaderChain& chain);
+        friend void chain_sync(HeaderChain& chain );
 };
