@@ -13,5 +13,5 @@ TEST(test_ledger_stores_wallets) {
     ledger.deposit(wallet, PDN(50.0));
     ASSERT_EQUAL(ledger.getWalletValue(wallet), PDN(50.0));
     ledger.closeDB();
-    ledger.deleteDB();
+    ledger.deleteDB ();
 }
