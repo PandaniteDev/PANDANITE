@@ -20,7 +20,7 @@
     
     #include <limits.h>
 
-    /* (u)int32_t */
+ 
     #ifndef uint32_t
         #if (ULONG_MAX == 0xffffffffUL)
             typedef unsigned long uint32_t;
