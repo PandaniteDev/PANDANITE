@@ -60,7 +60,7 @@ public:
             instance = new TestSuite;
         }
         return *instance;
-    }
+     }
 
     void add_test(const std::string& test_name, Test_func_t test) {
         tests_.insert({test_name, TestCase{test_name, test}});
