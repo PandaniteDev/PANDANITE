@@ -55,7 +55,7 @@ int ed25519_verify(const unsigned char *signature, const unsigned char *message,
         return 0;
     }
 
-    if (ge_frombytes_negate_vartime(&A, public_key) != 0) {
+    if (ge_frombytes_negate_vartime(&A, public_key)  != 0) {
         return 0;
     }
 
