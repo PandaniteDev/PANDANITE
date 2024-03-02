@@ -10,7 +10,7 @@ TEST(test_blockstore_stores_block) {
     a.setId(2);
     User miner;
     User receiver;
-    Transaction t = miner.mine();
+    Transaction t = miner.mine( );
     a.addTransaction(t);
     // send tiny shares to receiver:
     for(int i = 0; i < 5; i++) {
