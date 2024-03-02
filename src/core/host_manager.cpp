@@ -22,7 +22,7 @@ using namespace std;
     Fetches the public IP of the node
 */
 
-bool isValidIPv4(string& ip) {
+bool isValidIPv4(string& ip ) {
    unsigned int a,b,c,d;
    return sscanf(ip.c_str(),"%d.%d.%d.%d", &a, &b, &c, &d) == 4;
 }
