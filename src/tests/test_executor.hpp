@@ -69,7 +69,7 @@ TEST(checks_missing_mining_fee) {
     ASSERT_EQUAL(status, NO_MINING_FEE);  
 }
 
-TEST(check_valid_send) {
+TEST(check_valid_send)  {
     Block b;
 
     Ledger ledger;
