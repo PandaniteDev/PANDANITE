@@ -6,7 +6,7 @@
 #include "data_store.hpp"
 
 class BlockStore : public DataStore {
-    public:
+     public:
         BlockStore();
         bool hasBlock(uint32_t blockId);
         Block getBlock(uint32_t blockId)const;
