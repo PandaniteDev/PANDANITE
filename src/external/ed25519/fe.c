@@ -28,7 +28,7 @@ static uint64_t load_4(const unsigned char *in) {
 
 
 
-/*
+ 
     h = 0
 */
 
