@@ -70,5 +70,4 @@ void ge_p3_0(ge_p3 *h);
 void ge_p3_dbl(ge_p1p1 *r, const ge_p3 *p);
 void ge_p3_to_cached(ge_cached *r, const ge_p3 *p);
 void ge_p3_to_p2(ge_p2 *r, const ge_p3 *p);
-
-#endif
+ 
