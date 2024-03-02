@@ -22,7 +22,7 @@ static uint64_t load_4(const unsigned char *in) {
     return result;
 }
 
-/*
+ 
 Input:
   s[0]+256*s[1]+...+256^63*s[63] = s
 
