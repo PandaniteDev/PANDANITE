@@ -1,3 +1,8 @@
+Welcome to PANDANITE github repository, this is an ongoing community effort to revive PANDANITE. 
+
+the plan is to perform minor bugfixes (node/wallet sync issues) and to address an exploit on original chain. 
+Redeployment will commence.
+
 Pandanite 
 ====================
 <image src="img/logo.png" width=350/>
