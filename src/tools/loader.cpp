@@ -22,7 +22,7 @@ int main(int argc, char** argv) {
             } catch (...){
                 cout<<"Error parsing data file. Please delete data dir and try again"<<endl;
                 break;
-            }
+             }
         }
     } else {
         cout<<"Failed to load file."<<endl;
