@@ -12,7 +12,7 @@ class HashTree {
         HashTree(SHA256Hash hash);
         ~HashTree();
         SHA256Hash hash;
-        shared_ptr<HashTree> parent;
+        shared_ptr<HashTree>  parent;
         shared_ptr<HashTree> left;
         shared_ptr<HashTree> right;
 };
