@@ -33,7 +33,7 @@ class HostManager {
         
         void addPeer(string addr, uint64_t time, string version, string network);
         bool isDisabled();
-        void syncHeadersWithPeers();
+        void syncHeadersWithPeers( );
     protected:
         vector<std::shared_ptr<HeaderChain>> currPeers; 
         std::shared_ptr<BlockStore> blockStore;
