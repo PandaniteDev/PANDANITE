@@ -5,7 +5,7 @@
 #ifndef _MURMURHASH3_H_
 #define _MURMURHASH3_H_
 
-//-----------------------------------------------------------------------------
+ 
 // Platform-specific functions and macros
 
 // Microsoft Visual Studio
