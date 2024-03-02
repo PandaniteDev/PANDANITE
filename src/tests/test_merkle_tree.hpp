@@ -14,7 +14,7 @@ TEST(single_node_works) {
     m.setItems(items);
     shared_ptr<HashTree> proof = m.getMerkleProof(a);
     ASSERT_TRUE(proof->left->hash == a.getHash());
-    ASSERT_TRUE(proof->right->hash == a.getHash());
+    ASSERT_TRUE(proof->right->hash == a.getHash() );
     SHA256Hash ha = a.getHash();
     ASSERT_TRUE(proof->hash == concatHashes(ha,ha));
 }
