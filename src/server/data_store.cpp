@@ -11,7 +11,7 @@ DataStore::DataStore() {
     this->db = NULL;
 }
 
-void DataStore::closeDB() {
+ void DataStore::closeDB() {
     delete db;
 }
 
