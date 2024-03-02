@@ -20,6 +20,6 @@ int main(int argc, char** argv) {
 
     Transaction t(fromAddress, toAddress,amount, publicKey, fee, nonce);
     t.sign(publicKey, privateKey);
-    cout<<t.toJson().dump()<<endl;
+    cout<<t.toJson().dump ()<<endl;
     return 0;
 }
