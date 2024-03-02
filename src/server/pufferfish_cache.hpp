@@ -6,7 +6,7 @@
 using namespace std;
 
 class PufferfishCache : public DataStore {
-    public:
+     public:
         bool hasHash(const SHA256Hash& hash) const;
         SHA256Hash getHash(const SHA256Hash& hash) const;
         void setHash(const SHA256Hash& input, const SHA256Hash& hash);
