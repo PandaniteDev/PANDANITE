@@ -30,7 +30,7 @@ uint32_t TransactionStore::blockForTransactionId(SHA256Hash txHash) const{
     if (!status.ok()) return 0; //throw std::runtime_error("Could not find specified transaction");
     uint32_t val = *((uint32_t*)value.c_str());
     return val;
-}
+ }
 
 void TransactionStore::insertTransaction(Transaction& t, uint32_t blockId) {
     SHA256Hash txHash = t.hashContents();
