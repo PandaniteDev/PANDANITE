@@ -40,7 +40,7 @@ void ed25519_add_scalar(unsigned char *public_key, unsigned char *private_key, c
         }
     }
 
-    /* public key: A = nB + T */
+    
     if (public_key) {
         /* if we know the private key we don't need a point addition, which is faster */
         /* using a "timing attack" you could find out wether or not we know the private
