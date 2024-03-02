@@ -6,7 +6,7 @@
 using namespace std;
 
 User::User() {
-    std::pair<PublicKey,PrivateKey> keyPair = generateKeyPair();
+    std::pair<PublicKey,PrivateKey> keyPair = generateKeyPair( );
     this->publicKey = keyPair.first;
     this->privateKey = keyPair.second;
 }
