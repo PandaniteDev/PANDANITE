@@ -20,7 +20,7 @@ json getConfig(int argc, char**argv) {
     cout<<"▐████████████▀▀██████░"<<endl;
     cout<<"░▐████▀██████░░█████░░"<<endl;
     cout<<"░░░▀▀▀░░█████▌░████▀░░"<<endl;
-    cout<<"░░░░░░░░░▀▀███░▀▀▀░░░░"<<endl;
+    cout<<"░░░░░░░░░▀▀███░▀ ▀▀░░░░"<<endl;
 
 
     std::vector<std::string> args(argv, argv + argc);  
