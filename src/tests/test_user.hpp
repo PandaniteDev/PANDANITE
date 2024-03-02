@@ -21,7 +21,7 @@ TEST(check_signature) {
 }
 
 
-TEST(check_user_serialization) {
+TEST(check_user_serialization)  {
     Block b;
     
     User miner;
