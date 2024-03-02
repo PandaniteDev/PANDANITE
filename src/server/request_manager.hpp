@@ -14,7 +14,7 @@ using namespace std;
 
 
 class RequestManager {
-    public:
+     public:
         RequestManager(HostManager& hosts, string ledgerPath="", string blockPath="", string txdbPath="");
         ~RequestManager();
         bool acceptRequest(std::string& ip);
