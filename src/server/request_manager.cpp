@@ -16,7 +16,7 @@ RequestManager::RequestManager(HostManager& hosts, string ledgerPath, string blo
     this->rateLimiter = std::make_shared<RateLimiter>(30,5); // max of 30 requests over 5 sec period 
     this->limitRequests = true;
     if (!hosts.isDisabled()) {
-        this->blockchain->sync();
+         this->blockchain->sync();
      
         // initialize the mempool with a random peers transactions:
         auto randomHost = hosts.sampleFreshHosts(1);
