@@ -20,7 +20,7 @@ Bigint removeWork(Bigint previousWork, uint32_t challengeSize);
 PublicWalletAddress walletAddressFromPublicKey(PublicKey inputKey);
 string walletAddressToString(PublicWalletAddress p);
 PublicWalletAddress stringToWalletAddress(string s);
-std::pair<PublicKey,PrivateKey> generateKeyPair();
+std::pair<PublicKey,PrivateKey> generateKeyPair( );
 string publicKeyToString(PublicKey p);
 PublicKey stringToPublicKey(string p);
 string privateKeyToString(PrivateKey p);
