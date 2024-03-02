@@ -1,4 +1,4 @@
-#ifndef DODECAHEDRON_BIGINT_H_
+         #ifndef DODECAHEDRON_BIGINT_H_
 #define DODECAHEDRON_BIGINT_H_
 
 #include <vector>
@@ -7,7 +7,7 @@
 
 namespace Dodecahedron
 {
-class Bigint
+class  Bigint
 {
 private:
     std::vector<int> number;
