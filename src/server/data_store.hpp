@@ -11,7 +11,7 @@ class DataStore {
         void closeDB();
         void clear();
         string getPath() const;
-    protected:
+     protected:
         leveldb::DB* db;
         string path;
 };
