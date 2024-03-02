@@ -133,8 +133,7 @@ void PF_HMAC(HMAC_CTX *ctx, unsigned char *key, unsigned int key_sz, const unsig
     a = L;                                                                               \
     b = R;                                                                               \
 }
-
-#define REKEY(x)                                                                         \
+                                                                        \
 {                                                                                        \
     P[ 0] ^= key_u64[0];                                                                 \
     P[ 1] ^= key_u64[1];                                                                 \
