@@ -17,4 +17,4 @@ json pingPeer(string host_url, string peer_url, uint64_t time, string version, s
 json submitBlock(string host_url, Block& b);
 void readRawBlocks(string host_url, int startId, int endId, vector<Block>& blocks);
 void readRawTransactions(string host_url, vector<Transaction>& transactions);
-void readRawHeaders(string host_url, int startId, int endId, vector<BlockHeader>& blockHeaders);
+void readRawHeaders(string host_url, int startId, int endId, vector<BlockHeader>&  blockHeaders);
