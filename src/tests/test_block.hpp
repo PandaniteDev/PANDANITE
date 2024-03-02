@@ -7,7 +7,7 @@
 
 using namespace std;
 
-TEST(check_block_json_serialization) {
+TEST(check_block_json_serialization)  {
     Block a;
     User miner;
     User receiver;
