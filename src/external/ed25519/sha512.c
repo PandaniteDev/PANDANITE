@@ -56,7 +56,7 @@ static const uint64_t K[80] = {
     UINT64_C(0x5fcb6fab3ad6faec), UINT64_C(0x6c44198c4a475817)
 };
 
-/* Various logical functions */
+
 
 #define ROR64c(x, y) \
     ( ((((x)&UINT64_C(0xFFFFFFFFFFFFFFFF))>>((uint64_t)(y)&UINT64_C(63))) | \
