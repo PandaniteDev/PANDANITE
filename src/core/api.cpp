@@ -10,7 +10,7 @@ using namespace std;
 uint32_t getCurrentBlockCount(string host_url) {
     http::Request request{host_url + "/block_count"};
     const auto response = request.send("GET","",{},std::chrono::milliseconds{TIMEOUT_MS});
-    return std::stoi(std::string{response.body.begin(), response.body.end()});
+    return std::stoi(std::string{response.body.begin(), response.body.end( )});
 }
 
 Bigint getTotalWork(string host_url) {
