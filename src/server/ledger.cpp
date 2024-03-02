@@ -16,7 +16,7 @@ leveldb::Slice walletToSlice(const PublicWalletAddress& w) {
 leveldb::Slice amountToSlice(const TransactionAmount& t) {
     leveldb::Slice s2 = leveldb::Slice((const char*) &t, sizeof(TransactionAmount));
     return s2;
- }
+  }
 
 bool Ledger::hasWallet(const PublicWalletAddress& wallet) const{
     std::string value;
