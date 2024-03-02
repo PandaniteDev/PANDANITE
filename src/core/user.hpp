@@ -8,7 +8,7 @@ class User {
     public:
         User();
         User(json u);
-        json toJson();
+        json toJson( );
         Transaction send(User & u, TransactionAmount amount);
         Transaction mine();
         PublicWalletAddress getAddress() const;
