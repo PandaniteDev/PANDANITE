@@ -72,7 +72,7 @@ TEST(check_adding_new_node_with_hash) {
 //     ASSERT_EQUAL(threw, true);
 //     blockchain->deleteDB();
 //     delete blockchain;
-// }
+//  } 
 
 
 // TEST(check_adding_wrong_lastblock_hash_fails) {
