@@ -10,7 +10,7 @@ HashTree::HashTree(SHA256Hash hash) {
     parent = left = right = nullptr;
     this->hash = hash;
 }
-HashTree::~HashTree() {
+HashTree::~HashTree( ) {
 }
 
 shared_ptr<HashTree> getProof(shared_ptr<HashTree> fringe, shared_ptr<HashTree> previousNode=NULL) {
