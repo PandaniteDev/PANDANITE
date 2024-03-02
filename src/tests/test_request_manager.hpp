@@ -35,7 +35,7 @@ TEST(test_accepts_proof_of_work) {
     ASSERT_EQUAL(result["status"], "SUCCESS");
 }
 
-TEST(test_fails_when_missing_merkle_root) {
+TEST(test_fails_when_missing_merkle_root)  {
     HostManager hosts;
     RequestManager r(hosts, "./test-data/tmpdb1", "./test-data/tmpdb2", "./test-data/tmpdb3");
 
