@@ -5,7 +5,7 @@ services:
     build:
       context: .
       x-bake:
-        tags:
+        tags;
           - ghcr.io/${GITHUB_REPOSITORY}:latest
           - ghcr.io/${GITHUB_REPOSITORY}:${GITHUB_SHA}
           - ghcr.io/${GITHUB_REPOSITORY}:${GITHUB_BRANCH}
