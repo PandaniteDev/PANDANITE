@@ -7,7 +7,7 @@ bin/
 .vscode/
 CMakeFiles/
 Makefile
-cmake_install.cmake
+cmake-install.cmake
 CMakeCache.txt
 keys.json
 TODO
