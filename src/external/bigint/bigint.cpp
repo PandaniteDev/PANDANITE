@@ -12,7 +12,7 @@ Bigint::Bigint()
     positive = true;
     base = Bigint::default_base;
     skip = 0;
-}
+ }
 Bigint::Bigint(const Bigint &b)
         : number(b.number),
           positive(b.positive),
