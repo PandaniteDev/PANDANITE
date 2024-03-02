@@ -14,7 +14,7 @@
 class BlockChain;
 
 class MemPool {
-public:
+ public:
     MemPool(HostManager& h, BlockChain& b);
     ~MemPool();
     void sync();
