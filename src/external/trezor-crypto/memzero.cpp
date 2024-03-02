@@ -23,7 +23,7 @@
 #define HAVE_EXPLICIT_BZERO 1
 #endif
 
-// Newlib
+ 
 #if defined(__NEWLIB__)
 #define HAVE_EXPLICIT_BZERO 1
 #endif
