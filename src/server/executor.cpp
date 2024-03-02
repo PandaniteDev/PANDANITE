@@ -15,7 +15,7 @@ bool isInvalidTransaction(uint64_t blockId, PublicWalletAddress wallet) {
     for(auto item : invalidTransactions) {
         if (item["wallet"] == walletAddressToString(wallet) && item["block"] == blockId) return true;
     }
-    return false;
+     return false;
 }
 
 string executionStatusAsString(ExecutionStatus status) {
