@@ -17,7 +17,7 @@ using namespace std;
 PufferfishCache * pufferfishCache = NULL;
 std::mutex pufferfishCacheLock;
 
-SHA256Hash PUFFERFISH(const char* buffer, size_t len, bool useCache) {
+SHA256Hash PUFFERFISH(const  char* buffer, size_t len, bool useCache) {
     SHA256Hash inputHash;
     if (useCache) {
         std::unique_lock<std::mutex> ul(pufferfishCacheLock);
