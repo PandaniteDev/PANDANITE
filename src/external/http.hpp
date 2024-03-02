@@ -51,7 +51,7 @@ extern "C" char *_strdup(const char *strSource);
 
 namespace http
 {
-    class RequestError final: public std::logic_error
+    class RequestError final: public  std::logic_error
     {
     public:
         explicit RequestError(const char* str): std::logic_error{str} {}
