@@ -35,7 +35,7 @@ void blockHeaderToBuffer(BlockHeader& b, char* buffer) {
 Block::Block() {
     this->nonce = NULL_SHA256_HASH;
     this->id = 1;
-    this->timestamp = getCurrentTime();
+    this->timestamp = getCurrentTime( );
     this->difficulty = MIN_DIFFICULTY;
     this->merkleRoot = NULL_SHA256_HASH;
     this->lastBlockHash = NULL_SHA256_HASH;
