@@ -12,7 +12,7 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
 include(${CMAKE_BINARY_DIR}/build/conanbuildinfo.cmake)
-conan_basic_setup()
+conan_basic_setup( )
 
 file(GLOB CORE_SOURCES "src/core/*.cpp")
 file(GLOB SERVER_SOURCES "src/server/*.cpp")
