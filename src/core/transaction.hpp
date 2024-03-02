@@ -13,7 +13,7 @@ struct TransactionInfo {
     PublicWalletAddress from;
     TransactionAmount amount;
     TransactionAmount fee;
-    bool isTransactionFee;
+    bool  isTransactionFee;
 };
 
 #define TRANSACTIONINFO_BUFFER_SIZE 149
