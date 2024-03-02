@@ -6,5 +6,5 @@ int main(int argc, char **argv) {
     json config = getConfig(argc, argv);
     PandaniteServer* server = new PandaniteServer();
     server->run(config);
-}
+ }
 
