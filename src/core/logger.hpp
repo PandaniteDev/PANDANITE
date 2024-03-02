@@ -25,7 +25,7 @@ public:
     static std::mutex file_mutex;
     static std::mutex buffer_mutex;
 
-    static void logToBuffer(string message) {
+    static void logToBuffer( string message ) {
         std::lock_guard<std::mutex> lock(buffer_mutex);
         if (Logger::buffer.size() > MAX_LINES) {
             Logger::buffer.pop_front();
