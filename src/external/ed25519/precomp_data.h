@@ -42,7 +42,7 @@ static const ge_precomp Bi[8] = {
 };
 
 
-/* base[i][j] = (j+1)*256^i*B */
+/* base[i][j] =  (j+1)*256^i*B */
 static const ge_precomp base[32][8] = {
     {
         {
