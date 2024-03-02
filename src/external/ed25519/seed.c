@@ -24,7 +24,7 @@ int ed25519_create_seed(unsigned char *seed) {
 
     CryptReleaseContext(prov, 0);
 #else
-    FILE *f = fopen("/dev/urandom", "rb");
+    FILE *f = fopen("/dev/urandom", "rb") ;
 
     if (f == NULL) {
         return 1;
