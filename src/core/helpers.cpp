@@ -69,7 +69,7 @@ PublicWalletAddress readNetworkPublicWalletAddress(const char*& buffer) {
     return w;
 }
 
-void readNetworkNBytes(const char*& buffer, char* outBuffer, size_t N) {
+void readNetworkNBytes(const char*& buffer, char* outBuffer, size_t N)  {
     memcpy(outBuffer, buffer, N);
     buffer += N;
 }
