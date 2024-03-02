@@ -49,7 +49,7 @@ void ed25519_key_exchange(unsigned char *shared_secret, const unsigned char *pub
         fe_cswap(z2, z3, swap);
         swap = b;
 
-        /* from montgomery.h */
+     
         fe_sub(tmp0, x3, z3);
         fe_sub(tmp1, x2, z2);
         fe_add(x2, x2, z2);
