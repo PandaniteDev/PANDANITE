@@ -38,7 +38,7 @@ TEST(test_signature_verifications) {
     ASSERT_EQUAL(status, false);
 }
 
-TEST(total_work) {
+TEST(total_work)  {
     Bigint work = 0;
     work = addWork(work, 16);
     work = addWork(work, 16);
