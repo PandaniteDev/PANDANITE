@@ -56,7 +56,7 @@
 {                                             \
     w[i] =  SHA256_F4(w[i -  2]) + w[i -  7]  \
           + SHA256_F3(w[i - 15]) + w[i - 16]; \
-}
+ }
 
 uint32_t sha256_h0[8] =
             {0x6a09e667, 0xbb67ae85, 0x3c6ef372, 0xa54ff53a,
