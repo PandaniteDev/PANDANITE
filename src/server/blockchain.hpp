@@ -17,7 +17,7 @@
 #include "tx_store.hpp"
 using namespace std;
 
-class MemPool;
+class  MemPool;
 
 class BlockChain {
     public:
