@@ -25,7 +25,7 @@ SHA256Hash PufferfishCache::getHash(const SHA256Hash& hash) const{
     if (!status.ok()) throw std::runtime_error("Hash does not exist");
     return *((SHA256Hash*)value.c_str());
 }
-void PufferfishCache::setHash(const SHA256Hash& input, const SHA256Hash& value) {
+ void PufferfishCache::setHash(const SHA256Hash& input, const SHA256Hash& value) {
     leveldb::Status status = db->Put(leveldb::WriteOptions(), sha256ToSlice(input), sha256ToSlice(value));
     if (!status.ok()) throw std::runtime_error("Write failed: " + status.ToString());
 }
