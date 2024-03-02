@@ -23,7 +23,7 @@ bool RateLimiter::limit(const std::string &s) {
         }
         return true;
     } else {
-        if (iter->second > now) {
+        if (iter->second > now)  {
             return false;
         }
         iter->second = std::max(now - std::chrono::seconds(seconds), iter->second) + add;
