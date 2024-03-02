@@ -39,7 +39,7 @@ void get_work(PublicWalletAddress wallet, HostManager& hosts, string& customHost
                 currCount = hosts.getBlockCount();
             }
 
-            if (host == "") {
+            if (host == "")  {
                 Logger::logStatus("no host found");
                 return;
             }
