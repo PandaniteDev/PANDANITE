@@ -18,7 +18,7 @@ jobs:
       - name: Extract branch name
         run: echo "GITHUB_BRANCH=$(echo ${GITHUB_REF#refs/heads/} | sed 's/\//-/g')" >> $GITHUB_ENV
       - name: Print env variables for debugging
-        run: |
+        run:  |
           echo GITHUB_BRANCH=$GITHUB_BRANCH
           echo GITHUB_REPOSITORY=$GITHUB_REPOSITORY
       - run: docker buildx bake --progress=plain --push
