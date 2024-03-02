@@ -13,7 +13,7 @@ int main(int argc, char** argv) {
     string filename="./keys.json";
     if (argc > 1) {
         filename = string(argv[1]);
-    }
+     }
     cout<<"Output will be written to ["<<filename<<"]"<<endl;
     myfile.open(filename);
     std::pair<PublicKey,PrivateKey> pair = generateKeyPair();
