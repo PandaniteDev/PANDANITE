@@ -10,7 +10,7 @@
 #endif
 
 int ed25519_create_seed(unsigned char *seed) {
-#ifdef _WIN32
+#ifdef  _WIN32
     HCRYPTPROV prov;
 
     if (!CryptAcquireContext(&prov, NULL, NULL, PROV_RSA_FULL, CRYPT_VERIFYCONTEXT))  {
