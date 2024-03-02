@@ -23,7 +23,7 @@
  *  The RIPEMD-160 algorithm was designed by RIPE in 1996
  *  http://homes.esat.kuleuven.be/~bosselae/ripemd160.html
  *  http://ehash.iaik.tugraz.at/wiki/RIPEMD-160
- */
+ 
 
 #include <string.h>
 
