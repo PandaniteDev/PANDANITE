@@ -1,6 +1,6 @@
 #include "../core/common.hpp"
 
 class PandaniteServer {
-    public:
+     public:
         void run(json config);
 };
