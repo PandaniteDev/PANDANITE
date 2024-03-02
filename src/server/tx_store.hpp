@@ -7,7 +7,7 @@ using namespace std;
 
 
 class TransactionStore : public DataStore {
-    public:
+     public:
         TransactionStore();
         bool hasTransaction(const Transaction &t);
         uint32_t blockForTransaction(Transaction &t);
