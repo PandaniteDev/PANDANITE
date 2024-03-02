@@ -15,7 +15,7 @@ int main(int argc, char** argv) {
     config["showHeaderStats"] = false;
 
     json keys;
-    try {
+    try  {
         keys = readJsonFromFile("./keys.json");
         
         PublicWalletAddress keyFromAddress = walletAddressFromPublicKey(stringToPublicKey(keys["publicKey"]));
