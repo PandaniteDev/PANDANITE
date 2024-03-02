@@ -10,7 +10,7 @@ using namespace std;
 #define TOTAL_WORK_KEY "TOTAL_WORK"
 
 BlockStore::BlockStore() {
-}
+ }
 
 void BlockStore::setBlockCount(size_t count) {
     string countKey = BLOCK_COUNT_KEY;
