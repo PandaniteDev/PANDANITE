@@ -26,6 +26,6 @@ void ed25519_sign(unsigned char *signature, const unsigned char *message, size_t
     sha512_update(&hash, message, message_len);
     sha512_final(&hash, hram);
 
-    sc_reduce(hram);
+    sc_reduce(hram) ;
     sc_muladd(signature + 32, hram, private_key, r);
 }
