@@ -9,7 +9,7 @@
 using namespace std;
 
 
-TransactionInfo transactionInfoFromBuffer(const char* buffer) {
+TransactionInfo transactionInfoFromBuffer(const char* buffer)  {
     TransactionInfo t;
     readNetworkNBytes(buffer, t.signature, 64);
     readNetworkNBytes(buffer, t.signingKey, 32);
