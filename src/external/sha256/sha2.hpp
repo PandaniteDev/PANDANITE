@@ -32,40 +32,56 @@
  * SUCH DAMAGE.
  */
 
+#pragma once
 
-#ifndef SHA2_H
-#define SHA2_H
+#include <cstdint>
+#include <array>
 
-#include <stdint.h> 
+constexpr std::size_t SHA256_DIGEST_SIZE = 256 / 8;
+constexpr std::size_t SHA256_BLOCK_SIZE = 512 / 8;
 
+constexpr uint32_t SHFR(uint32_t x, int n) {
+    return (x >> n);
+}
 
-#define SHA256_DIGEST_SIZE ( 256 / 8)
-#define SHA256_BLOCK_SIZE  ( 512 / 8)
+constexpr uint32_t ROTR(uint32_t x, int n) {
+    return ((x >> n) | (x << ((sizeof(x) << 3) - n)));
+}
 
-#define SHFR(x, n)    (x >> n)
-#define ROTR(x, n)   ((x >> n) | (x << ((sizeof(x) << 3) - n)))
-#define CH(x, y, z)  ((x & y) ^ (~x & z))
-#define MAJ(x, y, z) ((x & y) ^ (x & z) ^ (y & z))
+constexpr uint32_t CH(uint32_t x, uint32_t y, uint32_t z) {
+    return ((x & y) ^ (~x & z));
+}
 
-#define SHA256_F1(x) (ROTR(x,  2) ^ ROTR(x, 13) ^ ROTR(x, 22))
-#define SHA256_F2(x) (ROTR(x,  6) ^ ROTR(x, 11) ^ ROTR(x, 25))
-#define SHA256_F3(x) (ROTR(x,  7) ^ ROTR(x, 18) ^ SHFR(x,  3))
-#define SHA256_F4(x) (ROTR(x, 17) ^ ROTR(x, 19) ^ SHFR(x, 10))
+constexpr uint32_t MAJ(uint32_t x, uint32_t y, uint32_t z) {
+    return ((x & y) ^ (x & z) ^ (y & z));
+}
 
-typedef struct  {
+constexpr uint32_t SHA256_F1(uint32_t x) {
+    return (ROTR(x, 2) ^ ROTR(x, 13) ^ ROTR(x, 22));
+}
+
+constexpr uint32_t SHA256_F2(uint32_t x) {
+    return (ROTR(x, 6) ^ ROTR(x, 11) ^ ROTR(x, 25));
+}
+
+constexpr uint32_t SHA256_F3(uint32_t x) {
+    return (ROTR(x, 7) ^ ROTR(x, 18) ^ SHFR(x, 3));
+}
+
+constexpr uint32_t SHA256_F4(uint32_t x) {
+    return (ROTR(x, 17) ^ ROTR(x, 19) ^ SHFR(x, 10));
+}
+
+struct SHA256Context {
     unsigned int tot_len;
     unsigned int len;
-    unsigned char block[2 * SHA256_BLOCK_SIZE];
-    uint32_t h[8];
-} sha256_ctx;
+    std::array<unsigned char, 2 * SHA256_BLOCK_SIZE> block;
+    std::array<uint32_t, 8> h;
+};
 
-extern uint32_t  sha256_k[64];
+extern std::array<uint32_t, 64> sha256_k;
 
-void sha256_init(sha256_ctx * ctx);
-void sha256_update(sha256_ctx *ctx, const unsigned char *message,
-                   unsigned int len);
-void sha256_final(sha256_ctx *ctx, unsigned char *digest);
-void sha256(const unsigned char *message, unsigned int len,
-            unsigned char *digest);
-
-#endif /* !SHA2_H */
+void sha256_init(SHA256Context& ctx);
+void sha256_update(SHA256Context& ctx, const unsigned char* message, unsigned int len);
+void sha256_final(SHA256Context& ctx, unsigned char* digest);
+void sha256(const unsigned char* message, unsigned int len, unsigned char* digest);
